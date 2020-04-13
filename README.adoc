@@ -1,5 +1,6 @@
 
-== Running COBOL jobs in OpenShift 4.4 
+== Running COBOL jobs in OpenShift 
+
 
 ----
 Create a COBOL container using buildah as shown at
