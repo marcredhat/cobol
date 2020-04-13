@@ -5,6 +5,10 @@ metadata:
   labels:
     app: coboljob
 spec:
+  parallelism: 4    
+  completions: 1    
+  activeDeadlineSeconds: 1800 
+  backoffLimit: 6
   template:
     spec:
       containers:
