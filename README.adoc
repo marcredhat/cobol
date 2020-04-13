@@ -43,5 +43,5 @@ oc create -f secret
 ----
 
 ----
-oc creat -f https://raw.githubusercontent.com/marcredhat/cobol/master/coboljob.yaml
+oc create -f https://raw.githubusercontent.com/marcredhat/cobol/master/coboljob.yaml
 ----
