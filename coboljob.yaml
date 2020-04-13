@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: coboljob
+  labels:
+    app: coboljob
+spec:
+  template:
+    spec:
+      containers:
+      - name: cobolubi
+        image: quay.io/marcf5/cobolubi
+      restartPolicy: Never
+      imagePullSecrets:
+        - name: staging-secret
