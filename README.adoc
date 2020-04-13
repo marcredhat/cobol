@@ -1,0 +1,41 @@
+
+
+
+----
+echo $marccobolubicontainer
+ubi-minimal-working-container-17
+----
+
+----
+buildah commit $marccobolubicontainer cobolubi
+----
+
+----
+buildah images
+REPOSITORY                         TAG               IMAGE ID       CREATED          SIZE
+localhost/cobolubi                 latest            d8481c697126   29 seconds ago   508 MB
+-----
+
+
+----
+podman  login -u="<quay user>" -p="<your quay token>" quay.io
+----
+
+----
+podman push localhost/cobolubi  quay.io/marcf5/cobolubi
+----
+
+----
+oc create secret docker-registry staging-secret \
+    --docker-server=quay.io \
+    --docker-username=<quay user> \
+    --docker-password='<quay user token>' \
+    --docker-email='<quay user email>' \
+    --dry-run -o yaml > secret
+----
+
+----
+oc create -f secret
+----
+
+
