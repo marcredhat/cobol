@@ -6,7 +6,7 @@ metadata:
     app: coboljob
 spec:
   parallelism: 4    
-  completions: 1    
+  completions: 3    
   activeDeadlineSeconds: 1800 
   backoffLimit: 6
   template:
