@@ -1,5 +1,5 @@
 
-== Running COBOL jobs in OpenShift 
+== Running COBOL jobs in OpenShift (in ubi8-minimal containers)
 
 
 ----
