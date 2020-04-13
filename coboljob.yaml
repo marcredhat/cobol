@@ -10,6 +10,7 @@ spec:
       containers:
       - name: cobolubi
         image: quay.io/marcf5/cobolubi
+        imagePullPolicy: Always
         command:
         - /bin/bash
         args:
