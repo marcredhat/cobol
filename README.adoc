@@ -1,5 +1,9 @@
 
 
+----
+Create a COBOL container using buildah as shown at
+https://github.com/marcredhat/cobol/blob/master/buildah.sh
+----
 
 ----
 echo $marccobolubicontainer
@@ -14,7 +18,7 @@ buildah commit $marccobolubicontainer cobolubi
 buildah images
 REPOSITORY                         TAG               IMAGE ID       CREATED          SIZE
 localhost/cobolubi                 latest            d8481c697126   29 seconds ago   508 MB
------
+----
 
 
 ----
